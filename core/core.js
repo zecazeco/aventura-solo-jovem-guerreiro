@@ -1,4 +1,4 @@
-import { credits, textNodes } from './../../my-game/game.js';
+import { credits, textNodes } from './../my-game/game.js';
 
 const textElement = document.getElementById('text');
 const inventoryElement = document.getElementById('inventory');
