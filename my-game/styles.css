@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+:root{
+
+  --font-family: 'Merriweather', serif;
+
+  /* text container */
+  --text-bg-color: #3F9FFF;
+  --text-border-color: #333;
+  --text-color: #fff;
+
+  /* options */
+  --btn-bg-color: #333;
+  --btn-border-color: #fff;
+  --btn-color: #fff;  
+
+  /* options:disabled */
+  --btn-dis-bg-color: #6b5555;
+  --btn-dis-border-color: #fff;
+  --btn-dis-color: rgb(219, 219, 219);
+
+  /* options:hover */
+  --btn-dis-bg-color: #333;
+  --btn-dis-border-color: #black;
+  --btn-dis-color: #fff;  
+}
+
+body {
+  background-image: url("images/background.jpg");   
+}
+   
