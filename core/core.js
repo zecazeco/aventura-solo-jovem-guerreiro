@@ -1,13 +1,16 @@
-import { textNodes } from '../../my-game/game.js';
+import { credits, textNodes } from '../../my-game/game.js';
 
 const textElement = document.getElementById('text');
-const inventoryElement = document.getElementById('inventory-list');
+const inventoryElement = document.getElementById('inventory');
 const optionButtonsElement = document.getElementById('options');
 
 let state = {};
 
 function startGame() {
   state = {};
+
+  //state = Object.assign(state, {itemTeste:true});
+
   showTextNode(1);
 }
 
@@ -16,22 +19,8 @@ function showTextNode(textNodeIndex) {
   //return text node by index
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
 
-  //remove previous paragraphs
-  while (textElement.firstChild) {
-    textElement.removeChild(textElement.firstChild)
-  }
-
-  //remove previous option buttons
-  while (optionButtonsElement.firstChild) {
-    optionButtonsElement.removeChild(optionButtonsElement.firstChild)
-  }
-
-  //remove previous inventory items
-  while (inventoryElement.firstChild) {
-    inventoryElement.removeChild(inventoryElement.firstChild)
-  }
-
   //set new paragraphs
+  textElement.innerHTML = "";
   textNode.paragraphs.forEach(paragraph => {
     const p = document.createElement('p');
     p.innerText = paragraph.text;
@@ -39,6 +28,7 @@ function showTextNode(textNodeIndex) {
   })
 
   //set new option buttons
+  optionButtonsElement.innerHTML = "";
   textNode.options.forEach(option => {
     const button = document.createElement('button');
     button.classList.add('btn');
@@ -52,18 +42,28 @@ function showTextNode(textNodeIndex) {
   })
 
   //show inventory items
+  inventoryElement.innerHTML = "";
+
+  let h3 = document.createElement('h3');
+  h3.innerText = "Your Items";
+  inventoryElement.appendChild(h3);
+
+  let ul = document.createElement('ul');
+  inventoryElement.appendChild(ul);
+
   let inv = Object.keys(state).filter(function(k){return state[k]});
-  if(!inv.length){
-    const li = document.createElement('li');
-    li.innerText = 'Empty';
-    inventoryElement.appendChild(li);
-  } else {
+  if(inv.length){
     inv.forEach(i => {
-      const li = document.createElement('li');
+      let li = document.createElement('li');
       li.innerText = i;
-      inventoryElement.appendChild(li);
+      ul.appendChild(li);
     })
-  } 
+   } else {
+    let li = document.createElement('li');
+    li.innerText = 'Empty';
+    ul.appendChild(li);
+  }
+  
 }
 
 function enabledOption(option) {
@@ -79,4 +79,24 @@ function selectOption(option) {
   showTextNode(nextTextNodeId);
 }
 
-startGame();
+function showCredits(){
+  let creditsElement = document.getElementById('game-credits');
+  let p = document.createElement('p');
+  p.innerText = `${credits.author} \n ${credits.description}`;
+  creditsElement.appendChild(p);
+  Object.keys(credits.links).forEach(key => {
+    let a = document.createElement('a');
+    var link = document.createTextNode(key);
+    a.appendChild(link); 
+    a.title = key; 
+    a.href = credits.links[key];    
+    creditsElement.appendChild(a);
+  })
+}
+
+window.onload = function() { 
+  document.title = credits.title;
+  document.getElementById('game-title').innerHTML = credits.title;
+  showCredits()
+  startGame();
+}

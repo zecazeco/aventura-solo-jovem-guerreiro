@@ -1,10 +1,12 @@
-export const credits = [
-  {
+export const credits = {
     title: 'Jovem Guerreiro - Aventura Solo',
     author: 'José Luís Haas',
-    description: 'Jogo de RPG escrito em 1999.'
-  }
-]
+    description: 'Jogo de RPG escrito em 1999.',
+    links: {
+      GitHub: 'https://github.com/zecazeco/aventura-solo-jovem-guerreiro',
+      Site: 'https://vangrog.com'
+    } 
+  };
 
 export const textNodes = [  
   {
