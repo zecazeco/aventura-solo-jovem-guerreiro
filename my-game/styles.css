@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root{
 
-  --font-family: 'Merriweather', serif;
+  --font-family: 'PT Sans', sans-serif;
   --bg-color: #3e4148;
 
   /* header */
   --header-color: #fcffdb;
 
   /* text container */
-  --text-bg-color: #632c22;
+  --text-bg-color: #463a37;
   --text-border-color: #1f110f;
   --text-color: #fcffdb;
 
@@ -19,8 +20,7 @@
   --btn-color: #fcffdb;  
 
   /* options:disabled */
-  --btn-dis-bg-color: #6b5555;
-  --btn-dis-border-color: #fcffdb;
+  --btn-dis-bg-color: #401c13;
   --btn-dis-color: #8b7979;
 
   /* options:hover */

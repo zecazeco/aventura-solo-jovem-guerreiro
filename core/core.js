@@ -40,7 +40,10 @@ function showTextNode(textNodeIndex) {
     button.classList.add('btn');
     button.innerText = option.text;
     if (enabledOption(option)) {
-      button.addEventListener('click', () => selectOption(option));
+      button.addEventListener('click', () => {
+        selectOption(option);
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      });
     } else {
       button.disabled = true;
     }
@@ -52,7 +55,7 @@ function showTextNode(textNodeIndex) {
 
   if (textNodeIndex > 0) {
     let h4 = document.createElement('h4');
-    h4.innerText = "Your Items";
+    h4.innerText = "Seus Itens";
     inventoryElement.appendChild(h4);
 
     let ul = document.createElement('ul');
@@ -67,7 +70,7 @@ function showTextNode(textNodeIndex) {
       })
     } else {
       let li = document.createElement('li');
-      li.innerText = 'empty';
+      li.innerText = 'Você não possui itens';
       ul.appendChild(li);
     }
   }

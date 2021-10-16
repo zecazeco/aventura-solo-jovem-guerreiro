@@ -27,12 +27,11 @@ export const textNodes = [
       {
         text: 'Iniciar',
         nextText: 1,
-      }                        
+      }                           
     ]
   },  
   {
     id: 1,
-    img: 'scene-00.gif',
     paragraphs: [
       {
         text: 'Você é um jovem guerreiro, ainda inexperiente, que mora com seu pai e sua mãe, tudo que você aprendeu sobre uma espada foi seu pai quem lhe ensinou. Vocês moram numa cidade muito pacata. Seu pai era o vendedor de armas da cidade, ele carregava sempre uma espada mágica que brilhava em suas mãos.'
@@ -344,7 +343,7 @@ export const textNodes = [
     ],    
     options: [
       {
-        text: 'Usar manto vermelho',
+        text: 'Tenho um manto vermelho',
         requiredState: (currentState) => currentState.mantoVermelho,
         nextText: 35
       },

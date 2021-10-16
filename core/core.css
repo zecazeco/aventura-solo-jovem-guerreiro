@@ -107,13 +107,13 @@ body {
 
 .buttons-section .btn:disabled {
   background-color: var(--btn-dis-bg-color);
-  border: 0px solid var(--btn-dis-border-color);
+  border-width: 0px;
   color: var(--btn-dis-color);
 } 
 
 .buttons-section .btn:disabled:hover {
   background-color: var(--btn-dis-bg-color);
-  border: 0px solid var(--btn-dis-border-color);
+  border-width: 0px;
   color: var(--btn-dis-color);
 }
 
