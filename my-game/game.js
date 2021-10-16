@@ -1,7 +1,7 @@
 export const credits = {
     title: 'Jovem Guerreiro - Aventura Solo',
     author: 'José Luís Haas',
-    description: 'Jogo de RPG escrito em 1999.',
+    description: 'Jogo de RPG solo escrito em 1999.',
     links: {
       GitHub: 'https://github.com/zecazeco/aventura-solo-jovem-guerreiro',
       Site: 'https://vangrog.com'
@@ -10,25 +10,42 @@ export const credits = {
 
 export const textNodes = [  
   {
+    id: 0,
+    img: 'scene-01.jpg',
+    paragraphs: [
+      {
+        text: 'Aventura solo, em texto, sobre um jovem guerreiro que tenta salvar seu pai em uma caverna cheia de perigos.'
+      },
+      {
+        text: 'Este é um projeto criado para estudos das tecnologias HTML5, CSS3 e JavaScript. Esta aventura foi escrita por mim em 1999 aos 14 anos de idade e resolvi publicá-la agora sem edições, tenha isso em mente ao jogá-la.'
+      },
+      {
+        text: 'Sinta-se livre para copiar o projeto no GitHub (link abaixo) e criar sua própria aventura!'
+      }             
+    ],
+    options: [
+      {
+        text: 'Iniciar',
+        nextText: 1,
+      }                        
+    ]
+  },  
+  {
     id: 1,
+    img: 'scene-01.jpg',
     paragraphs: [
       {
         text: 'Você é um jovem guerreiro, ainda inexperiente, que mora com seu pai e sua mãe, tudo que você aprendeu sobre uma espada foi seu pai quem lhe ensinou. Vocês moram numa cidade muito pacata. Seu pai era o vendedor de armas da cidade, ele carregava sempre uma espada mágica que brilhava em suas mãos.'
       },
       {
         text: 'Uma noite você acorda com um barulho muito estranho vindo do quarto do seu pai. Depois de se levantar, uma madeira vem ao seu encontro. Você acorda no chão do quarto com um corte na testa.'
-      }  
-      
-      ,
-      {
-        text: 'asfasfa s asf as fasf asf af asf as fas fvindo do quarto do seu pai. Depois de se levantar, uma madeira vem ao seu encontro. Você acoasf as fasf asf asf afs asf asf asf asf af af asf asf as fas fa fasf asaer aeraeraraerara e rlkjar fa fasf asf asf asf lkjaslçkjfaslfkjalfkjalsj la kjalkfjlas jkalsçfkjalsfjalsfasf as fasf asf af asf as fas fvindo do quarto do seu pai. Depois de se levantar, uma madeira vem ao seu encontro. Você acoasf as fasf asf asf afs asf asf asf asf af af asf asf as fas fa fasf asaer aeraeraraerara e rlkjar fa fasf asf asf asf lkjaslçkjfaslfkjalfkjalsj la kjalkfjlas jkalsçfkjalsfjalsfjalfja alçsfj la jlasfj laj flaj flrda no chão do quarto com um corte na testa.'
-      }       
+      }        
     ],
     options: [
       {
         text: 'Continuar',
         nextText: 76,
-      }           
+      }                   
     ]
   },
   {

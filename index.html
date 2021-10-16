@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--     <link href="./core/core.css" rel="stylesheet">
-    <link href="./my-game/styles.css" rel="stylesheet"> -->
+    <link href="./core/core.css" rel="stylesheet"> 
+    <link href="./my-game/styles.css" rel="stylesheet">
     <title>Text Adventure</title>
 </head>
 <body>
-    <header>
-        <h1 id="game-title">My Text Adventure</h1>
+    <header class="container">
+        <div class="title-container">
+            <h1 id="game-title">My Text Adventure</h1>
+        </div>
     </header>
     <main class="container">
-        <section id="image" class="image-section"></section>
-        <section id="text" class="text-section"></section>
-        <section id="inventory" class="inventory-section"></section>        
-        <section id="options" class="buttons-section"></section>
+        <div class="text-container">
+            <section id="image" class="image-section"></section>
+            <section id="text" class="text-section"></section>
+            <section id="inventory" class="inventory-section"></section>        
+            <section id="options" class="buttons-section"></section>
+        </div>        
     </main>
-    <footer>
-        <div id="game-credits">Credits</div>
+    <footer class="container">
+        <div class="credits-container">
+            <div id="game-credits"></div>
+        </div>        
     </footer> 
     <script defer src="./core/core.js" type="module"></script>
 </body>

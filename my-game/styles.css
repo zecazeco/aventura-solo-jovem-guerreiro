@@ -3,29 +3,38 @@
 :root{
 
   --font-family: 'Merriweather', serif;
+  --bg-color: #3e4148;
+
+  /* header */
+  --header-color: #fcffdb;
 
   /* text container */
-  --text-bg-color: #3F9FFF;
-  --text-border-color: #333;
-  --text-color: #fff;
+  --text-bg-color: #632c22;
+  --text-border-color: #1f110f;
+  --text-color: #fcffdb;
 
   /* options */
-  --btn-bg-color: #333;
-  --btn-border-color: #fff;
-  --btn-color: #fff;  
+  --btn-bg-color: #2f140d;
+  --btn-border-color: #fcffdb;
+  --btn-color: #fcffdb;  
 
   /* options:disabled */
   --btn-dis-bg-color: #6b5555;
-  --btn-dis-border-color: #fff;
-  --btn-dis-color: rgb(219, 219, 219);
+  --btn-dis-border-color: #fcffdb;
+  --btn-dis-color: #8b7979;
 
   /* options:hover */
-  --btn-dis-bg-color: #333;
-  --btn-dis-border-color: #black;
-  --btn-dis-color: #fff;  
+  --btn-hov-bg-color: #fcffdb;
+  --btn-hov-border-color: #fcffdb;
+  --btn-hov-color: #2f140d;  
+
+  /* credits */
+  --credits-color: #fcffdb;
+  --credits-link-color: #dfbc60;
 }
 
 body {
-  background-image: url("images/background.jpg");   
+/*   background: url("images/background.gif") bottom center/cover no-repeat fixed padding-box border-box #000; */
+  background-image: url("images/background.gif"); 
 }
    
