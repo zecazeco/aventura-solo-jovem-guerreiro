@@ -21,7 +21,7 @@ function showTextNode(textNodeIndex) {
   imageElement.innerHTML = "";
   if (textNode.img) {
     let img = document.createElement('img');
-    img.src = `./../my-game/images/scenes/${textNode.img}`;
+    img.src = `./my-game/images/scenes/${textNode.img}`;
     imageElement.appendChild(img);
   }
 
