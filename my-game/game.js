@@ -11,7 +11,7 @@ export const credits = {
 export const textNodes = [  
   {
     id: 0,
-    img: 'scene-01.jpg',
+    img: 'scene-00.gif',
     paragraphs: [
       {
         text: 'Aventura solo, em texto, sobre um jovem guerreiro que tenta salvar seu pai em uma caverna cheia de perigos.'
@@ -32,7 +32,7 @@ export const textNodes = [
   },  
   {
     id: 1,
-    img: 'scene-01.jpg',
+    img: 'scene-00.gif',
     paragraphs: [
       {
         text: 'Você é um jovem guerreiro, ainda inexperiente, que mora com seu pai e sua mãe, tudo que você aprendeu sobre uma espada foi seu pai quem lhe ensinou. Vocês moram numa cidade muito pacata. Seu pai era o vendedor de armas da cidade, ele carregava sempre uma espada mágica que brilhava em suas mãos.'
