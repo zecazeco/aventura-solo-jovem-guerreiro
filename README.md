@@ -27,9 +27,10 @@ This adventure was written by me in 1999 when I was 14 years old and I decided t
 Feel free to copy the "core system" and create your own adventure!
 
 ## Credits
-Based on 
+Based on: 
 
 [Space Muamba](https://github.com/jdalacorte/game)
+
 [Web Dev Simplified](https://www.youtube.com/watch?v=R1S_NhKkvGA)
 
 Characters animation:
